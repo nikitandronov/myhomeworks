@@ -1,0 +1,15 @@
+import os
+
+import re
+
+folder = 'C:\\news\\'
+
+for f in os.listdir(folder):
+     with open(os.path.join(folder, f)) as text:
+        for line in f:
+            if '<w' in line:
+                s += 1
+                with open('', 'w', encoding='utf-8') as d:
+                    d.write(f + s)
+
+print('VYSUPIR')
